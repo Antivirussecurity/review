@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>AntivirusReview - Become a Contributor</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Page specific styling -->
+  <style>
+    /* GLOBAL FIX – remove horizontal scroll */
+    html,
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ===== COMMON LIGHT ORANGE SECTION BG ===== */
+    .bg-light-blue {
+      background: #fff3e0;
+      /* very light orange for sections */
+    }
+
+    /* ===== PRIVACY HERO (as it is) ===== */
+    .privacy-hero {
+      background: #ff9f43;
+      /* solid light orange */
+      margin-top: 40px;
+    }
+
+    /* ===== SUBMIT HERO – SAME COLOR AS PRIVACY HERO ===== */
+    .submit-hero-main {
+      background: #ff9f43;
+      /* SAME as .privacy-hero */
+      margin-top: 40px;
+      /* navbar se gap */
+    }
+
+    /* Summary badges – submit page */
+    .submit-badge {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 18px 14px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      transition: all 0.3s ease;
+    }
+
+    .submit-badge i {
+      color: #ff7b3a;
+      transition: transform 0.3s ease;
+    }
+
+    .submit-badge:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 26px rgba(255, 123, 58, 0.35);
+    }
+
+    .submit-badge:hover i {
+      transform: scale(1.1);
+    }
+
+    /* Hero section + list */
+    .submit-hero-section .submit-hero-wrap {
+      gap: 24px;
+    }
+
+    .submit-hero-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .submit-hero-list li::before {
+      content: "✔";
+      color: #ff7b3a;
+      margin-right: 8px;
+      font-weight: 700;
+    }
+
+    .submit-hero-illustration {
+      max-width: 360px;
+    }
+
+    /* Roles cards */
+    .submit-role-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 18px 18px 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .submit-role-count {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      font-weight: 700;
+      font-size: 1rem;
+      color: rgba(255, 123, 58, 0.8);
+    }
+
+    .submit-role-card h5 {
+      margin-bottom: 8px;
+      padding-right: 40px;
+    }
+
+    /* How this works */
+    .submit-steps-list {
+      counter-reset: submit-step;
+    }
+
+    .submit-steps-list li {
+      margin-bottom: 10px;
+      line-height: 1.5;
+      position: relative;
+      padding-left: 26px;
+    }
+
+    .submit-steps-list li::before {
+      counter-increment: submit-step;
+      content: counter(submit-step);
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      background: #ff7b3a;
+      color: #ffffff;
+      font-size: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+
+    /* Check cards */
+    .submit-check-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 18px 18px 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    .submit-check-card h5 {
+      margin-bottom: 8px;
+    }
+
+    .submit-check-card ul {
+      padding-left: 18px;
+    }
+
+    .submit-check-card li {
+      margin-bottom: 4px;
+    }
+
+    /* Expert cards */
+    .our-expert-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 18px 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .our-expert-card-contact {
+      background: #fffaf2;
+    }
+
+    .expert-card-img img {
+      max-width: 120px;
+    }
+
+    /* Topic pills */
+    .avn-cat-wrapper {
+      gap: 10px;
+    }
+
+    .avn-cat-item {
+      background: #ffffff;
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+    }
+
+    /* Final CTA strip */
+    .submitadvertised-section {
+      background: #fffbf7;
+    }
+
+    .submitadvertised-inner {
+      border-radius: 18px;
+      background: #ffffff;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+      padding: 18px 20px;
+    }
+
+    .submitadvertised-title {
+      font-weight: 700;
+      color: #ff7b3a;
+      text-decoration: none;
+    }
+
+    .submitadvertised-title:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 767.98px) {
+      .submit-hero-illustration {
+        max-width: 260px;
+      }
+    }
+
+    .community-proof-section {
+      background: #ff9f43;
+      /* Same Privacy orange BG */
+    }
+
+    /* Cards */
+    .metric-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+      transition: 0.3s ease;
+    }
+
+    .metric-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 24px rgba(255, 123, 58, 0.35);
+    }
+
+    .metric-card i {
+      color: #ff7b3a;
+      transition: transform 0.3s ease;
+    }
+
+    .metric-card:hover i {
+      transform: scale(1.1);
+    }
+
+    /* Quote banner */
+    .quote-banner {
+      background: #ffffff;
+      border-radius: 24px;
+    }
+
+    .quote-banner h4 {
+      font-size: 1.4rem;
+      color: #ff7b3a;
+    }
+
+    /* CTA Button */
+    .btn-red {
+      background: #ff7b3a;
+      color: #fff;
+      border: none;
+      transition: 0.3s;
+    }
+
+    .btn-red:hover {
+      background: #e95a2d;
+      transform: scale(1.05);
+    }
+
+    /* IMPORTANT → right me column break force fix */
+    @media (min-width: 768px) {
+      .submit-hero-section .container .row {
+        flex-direction: row !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Topbar Start -->
+  <div class="container-fluid px-5 py-4 d-none d-lg-block">
+    <div class="row gx-0 align-items-center text-center">
+      <div class="col-md-4 col-lg-3 text-center text-lg-start">
+        <div class="d-inline-flex align-items-center">
+          <a href="" class="navbar-brand p-0">
+            <h1 class="display-5 text-primary m-0">
+              <i class="fas fa-shopping-bag text-secondary me-2"></i>AntivirusReview
+            </h1>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-6 text-center">
+        <div class="position-relative ps-4">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Topbar End -->
+
+  <!-- Navbar & Hero Start -->
+  <div class="container-fluid nav-bar p-0">
+    <div class="row gx-0 bg-primary px-5 align-items-center">
+      <div class="col-lg-3 d-none d-lg-block">
+        <nav class="navbar navbar-light position-relative" style="width: 250px;">
+          <button class="navbar-toggler border-0 fs-4 w-100 px-0 text-start" type="button" data-bs-toggle="collapse"
+            data-bs-target="#allCat">
+            <h4 class="m-0"><i class="fa fa-bars me-2"></i>Reviews</h4>
+          </button>
+          <div class="collapse navbar-collapse rounded-bottom" id="allCat">
+            <div class="navbar-nav ms-auto py-0">
+              <ul class="list-unstyled categories-bars">
+                <li>
+                  <div class="categories-bars-item">
+                    <a href="aura-antivirus.html">Aura</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-bars-item">
+                    <a href="norton-mobile-security.html">Norton 360</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-bars-item">
+                    <a href="avast-one-premium.html">Avast One Premium</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-bars-item">
+                    <a href="mcafee-total-protection.html">McAfee’s Total Protection</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-bars-item">
+                    <a href="trend-micro-antivirus.html">Trend Micro Antivirus</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="categories-bars-item">
+                    <a href="bitdefender-total-security.html">Bitdefender Total Security</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="col-12 col-lg-9">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+          <a href="" class="navbar-brand d-block d-lg-none">
+            <h1 class="display-5 text-secondary m-0">
+              <i class="fas fa-shopping-bag text-white me-2"></i>AntivirusReviews
+            </h1>
+          </a>
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars fa-1x"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="reviewsDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Review
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="reviewsDropdown">
+                  <li><a class="dropdown-item" href="aura-antivirus.html">Aura</a></li>
+                  <li><a class="dropdown-item" href="norton-mobile-security.html">Norton 360</a></li>
+                  <li><a class="dropdown-item" href="avast-one-premium.html">Avast One Premium</a></li>
+                  <li><a class="dropdown-item" href="mcafee-total-protection.html">McAfee’s Total Protection</a></li>
+                  <li><a class="dropdown-item" href="trend-micro-antivirus.html">Trend Micro Antivirus</a></li>
+                  <li><a class="dropdown-item" href="bitdefender-total-security.html">Bitdefender Total Security</a>
+                  </li>
+                </ul>
+              </div>
+
+              <a href="blog.html" class="nav-item nav-link">Blogs</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar & Hero End -->
+
+  <main>
+    <!-- Hero / Intro Section -->
+    <section class="container-fluid py-5 submit-hero-main wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-3 text-center">
+        <h1 class="display-5 fw-bold text-white mb-3">
+          Submit Your Blog to AntivirusReview
+        </h1>
+        <p class="text-light fs-6 mb-1">
+          Share your experience, research or opinions on cybersecurity, antivirus and privacy tools. ✍️🛡
+        </p>
+        <p class="text-light small mb-0">
+          Expert voices · Real users · Tech storytellers
+        </p>
+      </div>
+    </section>
+
+    <!-- Summary Badges -->
+    <div class="container py-4">
+      <div class="row g-4 text-center">
+        <div class="col-md-3">
+          <div class="submit-badge h-100 wow fadeInUp" data-wow-delay="0.1s">
+            <i class="fas fa-user-tie fa-2x mb-2"></i>
+            <h6 class="mb-1">Industry Experts</h6>
+            <p class="small mb-0">Cybersecurity pros, IT admins, analysts & consultants.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="submit-badge h-100 wow fadeInUp" data-wow-delay="0.2s">
+            <i class="fas fa-pen-nib fa-2x mb-2"></i>
+            <h6 class="mb-1">Content Writers</h6>
+            <p class="small mb-0">Writers who love deep, factual tech content.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="submit-badge h-100 wow fadeInUp" data-wow-delay="0.3s">
+            <i class="fas fa-shield-alt fa-2x mb-2"></i>
+            <h6 class="mb-1">Real Users</h6>
+            <p class="small mb-0">People who’ve actually used antivirus & security tools.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="submit-badge h-100 wow fadeInUp" data-wow-delay="0.4s">
+            <i class="fas fa-bullhorn fa-2x mb-2"></i>
+            <h6 class="mb-1">Thought Leaders</h6>
+            <p class="small mb-0">Folks with strong, data-backed opinions on security.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Content + CTA -->
+    <section class="submit-hero-section bg-light-blue py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- LEFT CONTENT -->
+          <div class="col-md-7 wow fadeInLeft" data-wow-delay="0.1s">
+            <h2 class="mb-3">Join our community of security storytellers</h2>
+            <p class="mb-2">
+              AntivirusReview is trusted by smart users who want to make better cybersecurity choices —
+              from selecting the right antivirus to securing their identity and network.
+            </p>
+            <p class="mb-3">
+              If you can explain cybersecurity in a simple, factual, and helpful way, we’d love to publish your voice.
+            </p>
+
+            <ul class="small mb-3 submit-hero-list">
+              <li>Original, researched, and user-first writing</li>
+              <li>No sponsored bias, no marketing fluff</li>
+              <li>Clear verdicts backed by real-use insights</li>
+            </ul>
+
+            <a class="btn btn-primary px-4 py-2 rounded" href="#">
+              <i class="fas fa-envelope-open-text me-2"></i>Pitch Your Article
+            </a>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="col-md-5 text-center wow fadeInRight" data-wow-delay="0.2s">
+            <img src="img/submit-blog-banner.webp" alt="Submit blog banner" class="img-fluid">
+            <p class="small text-muted mt-3 mb-0">
+              Trusted by readers · Written by real voices · No AI spam or paid placements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who Can Submit Section -->
+    <section class="submit-blogs-submit-section py-5">
+      <div class="container">
+        <p class="content-heading text-center mb-4">Who Can Submit Their Blogs?</p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="submit-role-card h-100 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="submit-role-count">01</div>
+              <h5>Industry Experts</h5>
+              <p class="small mb-0">
+                Subject matter experts who understand antivirus, malware, zero-day attacks,
+                SOC operations, or privacy tools and want to simplify them for everyday users.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="submit-role-card h-100 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="submit-role-count">02</div>
+              <h5>Professional Content Writers</h5>
+              <p class="small mb-0">
+                Tech or cybersecurity writers who can produce structured, SEO-friendly,
+                factually strong blogs, comparisons, explainers, or opinion pieces.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="submit-role-card h-100 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="submit-role-count">03</div>
+              <h5>Recent Buyers &amp; Power Users</h5>
+              <p class="small mb-0">
+                Real customers who’ve recently used antivirus or security suites and want
+                to share hands-on experience, pros &amp; cons and honest recommendations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How This Works -->
+    <section class="how-this-works-section bg-light-blue py-5">
+      <div class="container">
+        <p class="content-heading text-center mb-3">How Does It Work?</p>
+        <p class="text-center text-muted mb-4">
+          A simple 5-step process from pitch to publication.
+        </p>
+        <div class="row align-items-center g-4">
+          <div class="col-md-5 text-center wow fadeInLeft" data-wow-delay="0.1s">
+            <img class="img-responsive img-fluid" src="img/how_this_works.webp" alt="how this works">
+          </div>
+          <div class="col-md-7 wow fadeInRight" data-wow-delay="0.2s">
+            <ol class="submit-steps-list small mb-0">
+              <li>
+                <strong>Send us a pitch:</strong> Email
+                <a href="#">info@AntivirusReview.com</a>
+                with your topic ideas, background and any published work or portfolio links.
+              </li>
+              <li>
+                <strong>Get a green signal:</strong> Our editorial team will review your pitch and
+                confirm if the topic fits our audience and content guidelines.
+              </li>
+              <li>
+                <strong>Write &amp; submit draft:</strong> You share the first draft in Google Docs/Word,
+                following our structure, tone and factual accuracy expectations.
+              </li>
+              <li>
+                <strong>Editing &amp; feedback:</strong> We suggest edits (if needed) for clarity, accuracy,
+                examples, screenshots and SEO improvements.
+              </li>
+              <li>
+                <strong>Publish &amp; credit:</strong> Once approved, your article goes live on AntivirusReview
+                with your name, short bio and (optional) social or website link.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Look For -->
+    <section class="common-section py-5">
+      <div class="container">
+        <p class="content-heading text-center mb-3">What We Look For In Articles</p>
+        <p class="text-center text-muted mb-4">
+          Great content is clear, honest and helpful. Here’s what makes a blog stand out on AntivirusReview:
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="submit-check-card h-100 wow fadeInUp" data-wow-delay="0.1s">
+              <h5>Content Quality &amp; Depth</h5>
+              <ul class="small mb-0">
+                <li>Strong introduction with a clear promise or problem statement.</li>
+                <li>Well-researched insights with data, examples and real scenarios.</li>
+                <li>Logical flow: headings, subheadings, bullet points and summaries.</li>
+                <li>Balanced tone — neither overly promotional nor overly negative.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="submit-check-card h-100 wow fadeInUp" data-wow-delay="0.2s">
+              <h5>Accuracy &amp; Originality</h5>
+              <ul class="small mb-0">
+                <li>No plagiarism, copy-paste or generic AI-generated content.</li>
+                <li>Up-to-date facts, screenshots and product details.</li>
+                <li>Clear separation between facts, opinions and personal experiences.</li>
+                <li>Sources cited where needed (labs, reports, security advisories).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="submit-check-card h-100 wow fadeInUp" data-wow-delay="0.3s">
+              <h5>Reader Value</h5>
+              <ul class="small mb-0">
+                <li>Actionable takeaways — what should the reader do next?</li>
+                <li>Comparison tables, pros &amp; cons or decision checklists where useful.</li>
+                <li>Explaining “why” not just “what”.</li>
+                <li>Language that a non-technical user can understand.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="submit-check-card h-100 wow fadeInUp" data-wow-delay="0.4s">
+              <h5>Formatting &amp; SEO Basics</h5>
+              <ul class="small mb-0">
+                <li>Meaningful headings (H2, H3) and descriptive sub-sections.</li>
+                <li>Short paragraphs, bullet points and scannable structure.</li>
+                <li>Keyword naturally placed, not stuffed.</li>
+                <li>Meta title and description suggestions (optional but helpful).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Write For AntivirusReview Section -->
+    <section class="common-section submit-benefits-section bg-light-blue py-5">
+      <div class="container">
+        <p class="content-heading text-center mb-3">Why Write For AntivirusReview?</p>
+        <p class="text-center text-muted mb-5">
+          Share your real experiences, research and opinions on antivirus, cybersecurity and privacy tools —
+          and help thousands of users choose safer digital products.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="submit-check-card h-100">
+              <h5>Reach a Targeted Audience</h5>
+              <p class="small mb-0">
+                Your articles get discovered by readers who actively search for antivirus comparisons,
+                security tips, privacy tools and real-world protection advice.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="submit-check-card h-100">
+              <h5>Build Your Authority</h5>
+              <p class="small mb-0">
+                Showcase your expertise as a security analyst, tech reviewer, ethical hacker,
+                IT admin or privacy-focused blogger with an author bio &amp; byline.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="submit-check-card h-100">
+              <h5>Get Paid for Quality Work</h5>
+              <p class="small mb-0">
+                High quality, well-researched submissions are eligible for paid collaborations
+                based on the topic depth, originality and user value.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second row: What kind of content we love -->
+        <div class="row g-4 mt-4">
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="submit-check-card h-100">
+              <h5>Content Types We Love</h5>
+              <ul class="small mb-0">
+                <li>Hands-on antivirus reviews (PC, Mac, Android, iOS).</li>
+                <li>Step-by-step security guides &amp; how-to tutorials.</li>
+                <li>Comparison articles (e.g., Norton vs McAfee vs Bitdefender).</li>
+                <li>Case studies on hacks, scams, breaches and lessons learned.</li>
+                <li>Opinion pieces on future of cybersecurity &amp; AI threats.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="submit-check-card h-100">
+              <h5>What Makes a Great Submission</h5>
+              <ul class="small mb-0">
+                <li>Original content — no AI-only, copied or spun articles.</li>
+                <li>Clear structure: intro, body, examples, conclusion.</li>
+                <li>Real screenshots, tests or examples (where possible).</li>
+                <li>Neutral tone — highlight pros <em>and</em> cons honestly.</li>
+                <li>Practical takeaways that help the reader decide or act.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.6s">
+          <p class="mb-2 fw-semibold">Ready to pitch your idea or send your draft?</p>
+          <a href="#" class="btn btn-primary px-4 py-2">
+            Email Your Topic to info@AntivirusReview.com
+          </a>
+          <p class="small text-muted mt-2 mb-0">
+            Please include your name, background, sample work links (if any) and preferred topic angle.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Proof Section -->
+    <section class="community-proof-section py-5 wow fadeInUp" data-wow-delay="0.2s">
+      <div class="container">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-5">
+          <p class="text-uppercase text-primary small fw-semibold mb-2">Our Benchmark</p>
+          <h2 class="display-5 fw-bold text-primary">How We Rank With Absolute Integrity</h2>
+          <p class="text-dark small mt-2">A contributor-led survival testing standard</p>
+        </div>
+
+        <!-- 3 Highlight Cards -->
+        <div class="row g-4 justify-content-center text-center">
+
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="metric-card p-4 h-100 rounded-4 shadow-sm">
+              <i class="fas fa-bug fa-3x mb-3"></i>
+              <h5 class="fw-bold mb-2">Threat Survival Tests</h5>
+              <p class="small text-dark mb-0">
+                We simulate ransomware encryption, trojan injections, phishing downloads, browser zero-day exploits
+                and unsafe network access to test if protection holds under real attack pressure.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="metric-card p-4 h-100 rounded-4 shadow-sm">
+              <i class="fas fa-tachometer-alt fa-3x mb-3"></i>
+              <h5 class="fw-bold mb-2">System Impact Scoring</h5>
+              <p class="small text-dark mb-0">
+                Detection rate alone isn't enough — we score RAM/CPU spike, boot delay, gaming-mode lag,
+                background scanning efficiency and battery drain across devices.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="metric-card p-4 h-100 rounded-4 shadow-sm">
+              <i class="fas fa-balance-scale fa-3x mb-3"></i>
+              <h5 class="fw-bold mb-2">No Sponsored Rankings</h5>
+              <p class="small text-dark mb-0">
+                Our editorial team never accepts placements to influence score logic.
+                Only real installs, raw test logs and verified community reports shape the rankings.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quote Banner -->
+        <div class="row mt-5 justify-content-center">
+          <div class="col-md-10">
+            <div class="quote-banner text-center p-4 rounded-4 shadow-sm">
+              <h4 class="fw-bold text-primary mb-0 fst-italic">
+                “We don’t *review* antivirus… we *attack-test* it before we score it.”
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parameter List -->
+        <div class="row mt-5 g-3 justify-content-center text-center">
+          <div class="col-md-3 fw-semibold">Malware Detection Accuracy</div>
+          <div class="col-md-3 fw-semibold">Ransomware Encryption Block Rate</div>
+          <div class="col-md-3 fw-semibold">Scan &amp; Boot Time Impact</div>
+          <div class="col-md-3 fw-semibold">Mobile Battery Drain Tests</div>
+          <div class="col-md-3 fw-semibold">Firewall &amp; Fake Wi-Fi Guards</div>
+          <div class="col-md-3 fw-semibold">VPN &amp; Data Encryption Score</div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-5">
+          <p class="text-dark small mb-3">Think you test security like we do?</p>
+          <a href="submit-blog.html" class="btn btn-red px-5 py-2 rounded-pill shadow-sm wow pulse">
+            Become a Contributor ✍️🛡
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topics We Cover -->
+    <section class="submit-avn-categories py-5 bg-light-blue">
+      <div class="container">
+        <p class="content-heading text-center mb-3">Topics We Love to Publish</p>
+        <p class="text-center text-muted mb-4">
+          You don’t have to cover all of these — even one strong, focused angle is enough.
+        </p>
+        <div class="avn-cat-wrapper d-flex flex-wrap justify-content-center gap-2">
+          <span class="avn-cat-item">Ransomware Attacks</span>
+          <span class="avn-cat-item">Zero-Day Vulnerabilities</span>
+          <span class="avn-cat-item">Antivirus &amp; Endpoint Protection</span>
+          <span class="avn-cat-item">Cloud Security</span>
+          <span class="avn-cat-item">Phishing &amp; Social Engineering</span>
+          <span class="avn-cat-item">AI &amp; Machine Learning in Security</span>
+          <span class="avn-cat-item">Data Privacy &amp; Compliance</span>
+          <span class="avn-cat-item">Password Managers &amp; Identity Theft</span>
+          <span class="avn-cat-item">VPNs &amp; Online Anonymity</span>
+          <span class="avn-cat-item">Small Business Security</span>
+          <span class="avn-cat-item">Deepfake Threats</span>
+          <span class="avn-cat-item">Best Practices &amp; How-to Guides</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Strip -->
+    <section class="submitadvertised-section submit-blog-advertise py-4">
+      <div class="container">
+        <div
+          class="submitadvertised-inner d-flex flex-column flex-md-row align-items-center justify-content-between">
+          <div class="submitadvertised-img mb-3 mb-md-0">
+            <img src="img/submitadvertised-svg.png" alt="ad image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Start -->
+  <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5">
+      <div class="row g-4 rounded mb-5" style="background: rgba(255, 255, 255, .03);">
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="rounded p-4">
+            <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center mb-4"
+              style="width: 70px; height: 70px;">
+              <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+            </div>
+            <div>
+              <h4 class="text-white">Address</h4>
+              <p class="mb-2">USA</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="rounded p-4">
+            <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center mb-4"
+              style="width: 70px; height: 70px;">
+              <i class="fas fa-envelope fa-2x text-primary"></i>
+            </div>
+            <div>
+              <h4 class="text-white">Mail Us</h4>
+              <p class="mb-2">info@AntivirusReview.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <div class="footer-item">
+              <h4 class="text-primary mb-4">AntivirusReview</h4>
+              <p class="mb-3">
+                Get honest and expert antivirus reviews for top security brands.
+                Compare protection, performance, and real user feedback to choose the best for your PC and phone.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-primary mb-4">Reviews</h4>
+            <a href="aura-antivirus.html" class=""><i class="fas fa-angle-right me-2"></i> Aura</a>
+            <a href="norton-mobile-security.html" class=""><i class="fas fa-angle-right me-2"></i> Norton 360</a>
+            <a href="avast-one-premium.html" class=""><i class="fas fa-angle-right me-2"></i> Avast One Premium</a>
+            <a href="mcafee-total-protection.html" class=""><i class="fas fa-angle-right me-2"></i> McAfee’s Total
+              Protection</a>
+            <a href="trend-micro-antivirus.html" class=""><i class="fas fa-angle-right me-2"></i> Trend Micro
+              Antivirus</a>
+            <a href="bitdefender-total-security.html" class=""><i class="fas fa-angle-right me-2"></i> Bitdefender
+              Total Security</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-primary mb-4">Information</h4>
+            <a href="about-us.html" class=""><i class="fas fa-angle-right me-2"></i> About Us</a>
+            <a href="privacy-policy.html" class=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+            <a href="terms-and-conditions.html" class=""><i class="fas fa-angle-right me-2"></i> Terms &amp;
+              Conditions</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-primary mb-4">Customer Service</h4>
+            <a href="contact.html" class=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+            <a href="methodology.html" class=""><i class="fas fa-angle-right me-2"></i> Scoring &amp; Ranking</a>
+            <a href="submit-blog.html" class=""><i class="fas fa-angle-right me-2"></i> Become a Contributor</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright py-4">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-md-0">
+          <span class="text-white">
+            <a href="#" class="border-bottom text-white">
+              <i class="fas fa-copyright text-light me-2"></i>AntivirusReview
+            </a>, All right reserved.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-primary btn-lg-square back-to-top">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

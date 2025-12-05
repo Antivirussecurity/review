@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AntivirusReview – Blogs</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="antivirus blogs, cybersecurity tips, antivirus guides" name="keywords">
+    <meta content="Read expert-written blogs on antivirus software, cybersecurity tips, and online privacy guides." name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* ===== Blog Headings Orange + Animation ===== */
+        .text-heading {
+            color: #ff7a1a;      /* Navbar-style orange heading */
+        }
+
+        /* Card hover thoda soft */
+        .blog-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Topbar Start -->
+    <div class="container-fluid px-5 py-4 d-none d-lg-block">
+        <div class="row gx-0 align-items-center text-center">
+            <div class="col-md-4 col-lg-3 text-center text-lg-start">
+                <div class="d-inline-flex align-items-center">
+                    <a href="index.html" class="navbar-brand p-0">
+                        <h1 class="display-5 text-primary m-0">
+                            <i class="fas fa-shopping-bag text-secondary me-2"></i>AntivirusReview
+                        </h1>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-6 text-center">
+                <div class="position-relative ps-4">
+                    <!-- Optional top search ya tagline yahan dal sakte ho -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar p-0">
+        <div class="row gx-0 bg-primary px-5 align-items-center">
+            <div class="col-lg-3 d-none d-lg-block">
+                <nav class="navbar navbar-light position-relative" style="width: 250px;">
+                    <button class="navbar-toggler border-0 fs-4 w-100 px-0 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#allCat">
+                        <h4 class="m-0"><i class="fa fa-bars me-2"></i>Reviews</h4>
+                    </button>
+                    <div class="collapse navbar-collapse rounded-bottom" id="allCat">
+                        <div class="navbar-nav ms-auto py-0">
+                            <ul class="list-unstyled categories-bars">
+                                <li>
+                                    <div class="categories-bars-item">
+                                        <a href="aura-antivirus.html">Aura</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="categories-bars-item">
+                                        <a href="norton-mobile-security.html">Norton 360</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="categories-bars-item">
+                                        <a href="avast-one-premium.html">Avast One Premium</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="categories-bars-item">
+                                        <a href="mcafee-total-protection.html">McAfee’s Total Protection</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="categories-bars-item">
+                                        <a href="trend-micro-antivirus.html">Trend Micro Antivirus</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="categories-bars-item">
+                                        <a href="bitdefender-total-security.html">Bitdefender Total Security</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-12 col-lg-9">
+                <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                    <a href="index.html" class="navbar-brand d-block d-lg-none">
+                        <h1 class="display-5 text-secondary m-0">
+                            <i class="fas fa-shopping-bag text-white me-2"></i>AntivirusReviews
+                        </h1>
+                    </a>
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars fa-1x"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto py-0">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="reviewsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Review
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="reviewsDropdown">
+                                    <li><a class="dropdown-item" href="aura-antivirus.html">Aura</a></li>
+                                    <li><a class="dropdown-item" href="norton-mobile-security.html">Norton 360</a></li>
+                                    <li><a class="dropdown-item" href="avast-one-premium.html">Avast One Premium</a></li>
+                                    <li><a class="dropdown-item" href="mcafee-total-protection.html">McAfee’s Total Protection</a></li>
+                                    <li><a class="dropdown-item" href="trend-micro-antivirus.html">Trend Micro Antivirus</a></li>
+                                    <li><a class="dropdown-item" href="bitdefender-total-security.html">Bitdefender Total Security</a></li>
+                                </ul>
+                            </div>
+                            <a href="blog.html" class="nav-item nav-link active">Blogs</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- MAIN BLOG CONTENT START -->
+    <main>
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb py-3">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Blogs</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Blog Hero / Intro Section -->
+        <section class="common-section bg-light-blue">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-12">
+                        <h2 class="mb-3 text-heading wow fadeInUp" data-wow-delay="0.1s">
+                            🛡️ Cybersecurity & Antivirus Guides
+                        </h2>
+                        <p class="mb-2 wow fadeInUp" data-wow-delay="0.2s">
+                            Yahan aapko milenge simple language me likhe hue blogs jo aapko
+                            online threats – jaise virus, malware, phishing aur data leaks – se bachna sikhayenge.
+                        </p>
+                        <p class="mb-0 wow fadeInUp" data-wow-delay="0.3s">
+                            Har article me hum real-life examples, easy tips aur practical recommendations dete hain
+                            taaki aap apne PC, laptop, aur phone ko secure rakh sako – bina technical expert bane.
+                            Yeh page ek hi jagah par sab blogs ka detailed overview deta hai, aapko alag-alag page
+                            open karne ki zarurat nahi padegi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog List -->
+        <section class="common-section">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- LEFT COLUMN – BLOGS -->
+                    <div class="col-lg-8">
+                        
+                        <!-- Blog 1 -->
+                        <article class="card blog-card shadow-sm border-0 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="card-body">
+                                <h3 class="mb-2 text-heading">
+                                    🔍 How Do I Choose the Right Antivirus for Myself?
+                                </h3>
+                                <div class="small text-muted mb-3">
+                                    By Tanmay Patange · Oct 16, 2024
+                                </div>
+                                <p class="mb-2">
+                                    Har user ki needs alag hoti hain – kisi ko sirf basic virus protection chahiye,
+                                    kisi ko online banking security, toh kisi ko pure family ke liye multi-device plan chahiye.
+                                    Agar aap randomly “best antivirus” search karke koi bhi software install kar lete hain,
+                                    toh ho sakta hai ya toh aap extra pay karein, ya phir kam protection lein.
+                                </p>
+                                <p class="mb-2">
+                                    Antivirus choose karte waqt in core cheezon ko dhyan me rakhna bahut zaruri hai:
+                                </p>
+                                <ul class="mb-2">
+                                    <li>💡 <b>Real-time protection</b> – sirf manual scan nahi, background me active shield ho.</li>
+                                    <li>🧹 <b>Threat coverage</b> – ransomware, phishing, spyware, adware jaise advanced threats cover ho.</li>
+                                    <li>🌐 <b>Extra tools</b> – VPN, password manager, parental control, webcam protection etc. zarurat ke hisaab se.</li>
+                                    <li>⚙️ <b>Performance impact</b> – system ko slow na kare, especially older laptops/PC par.</li>
+                                </ul>
+                                <p class="mb-2">
+                                    Jo log sirf basic browsing, YouTube, social media use karte hain, unke liye
+                                    lightweight antivirus kaafi hota hai. Lekin agar aap:
+                                </p>
+                                <ul class="mb-2">
+                                    <li>💼 Work-from-home karte ho</li>
+                                    <li>🏦 Online banking & trading apps use karte ho</li>
+                                    <li>📁 Important office ya client data store karte ho</li>
+                                </ul>
+                                <p class="mb-0">
+                                    toh aapko ek strong, paid security suite consider karna chahiye jo multi-layer protection,
+                                    identity safety aur secure browsing provide kare. Yahi article detail me explain karta hai
+                                    kaunse type ka antivirus kis user ke liye best fit hota hai.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Blog 2 -->
+                        <article class="card blog-card shadow-sm border-0 mb-4 wow fadeInUp" data-wow-delay="0.15s">
+                            <div class="card-body">
+                                <h3 class="mb-2 text-heading">
+                                    💰 Are Free Antivirus Reliable, or Should I Opt for a Paid One?
+                                </h3>
+                                <div class="small text-muted mb-3">
+                                    By Tanmay Patange · Oct 28, 2023
+                                </div>
+                                <p class="mb-2">
+                                    Free antivirus aksar ek basic shield jaisa hota hai – jo common, known viruses ko block
+                                    kar deta hai. Lekin cyber criminals aaj kal itne advance ho gaye hain ki sirf basic layer
+                                    se kaam nahi chalta. Is blog me free vs paid antivirus ka honest comparison diya gaya hai.
+                                </p>
+                                <p class="mb-2">
+                                    Short me difference kuch aisa lagta hai:
+                                </p>
+                                <ul class="mb-2">
+                                    <li>🆓 <b>Free Antivirus</b> – basic scanning, limited features, kabhi-kabhi ads, kam customization options.</li>
+                                    <li>💳 <b>Paid Antivirus</b> – advanced firewall, ransomware shield, anti-phishing, VPN, password manager, identity protection, multi-device support.</li>
+                                </ul>
+                                <p class="mb-2">
+                                    Free tools un logon ke liye theek hain jo:
+                                </p>
+                                <ul class="mb-2">
+                                    <li>Sirf casual browsing aur streaming karte hain</li>
+                                    <li>Online payments ya sensitive work kam karte hain</li>
+                                    <li>New devices use karte hain jisme latest security patches already hote hain</li>
+                                </ul>
+                                <p class="mb-0">
+                                    Lekin jahan bhi aapka <b>money, confidential data ya identity</b> stake par ho –
+                                    jaise freelancers, business owners, bankers, students jo forms aur documents share karte hain –
+                                    un sab ke liye paid antivirus long-term me zyada safe aur cost-effective decision hota hai.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Blog 3 -->
+                        <article class="card blog-card shadow-sm border-0 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="card-body">
+                                <h3 class="mb-2 text-heading">
+                                    📱 Top 5 Free Antivirus Options For Android Devices
+                                </h3>
+                                <div class="small text-muted mb-3">
+                                    By Tanmay Patange · Oct 25, 2024
+                                </div>
+                                <p class="mb-2">
+                                    Aaj kal sabse sensitive data mobile phones me hota hai – banking apps, UPI,
+                                    OTPs, office email, social media, personal photos, sab kuch. Phir bhi hum phone security
+                                    ko PC ke compared kam importance dete hain. Is article me Android ke liye kuch reliable
+                                    free antivirus options ka analysis diya gaya hai.
+                                </p>
+                                <p class="mb-2">
+                                    Ye free Android antivirus mainly in points par judge kiye gaye:
+                                </p>
+                                <ul class="mb-2">
+                                    <li>🔐 Real-time malware & spyware detection</li>
+                                    <li>🌐 Malicious websites aur phishing links block karne ki capability</li>
+                                    <li>📲 App scanning – risky permissions ya suspicious behavior detect karna</li>
+                                    <li>🧹 Junk cleaner / performance booster (optional but useful)</li>
+                                    <li>📍 Anti-theft features – lost phone locate, data wipe etc. (agar available ho)</li>
+                                </ul>
+                                <p class="mb-0">
+                                    Article ka main takeaway yeh hai ki agar aap regular basis par
+                                    third-party apps install karte ho, unknown Wi-Fi networks use karte ho,
+                                    ya phone par financial apps chalaate ho, toh ek free Android antivirus bhi
+                                    kaafi kaam aa sakta hai – especially un users ke liye jo filhaal paid plan
+                                    afford nahi karna chahte.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Blog 4 -->
+                        <article class="card blog-card shadow-sm border-0 mb-4 wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="card-body">
+                                <h3 class="mb-2 text-heading">
+                                    🪟 Is Microsoft Defender Antivirus Good Enough?
+                                </h3>
+                                <div class="small text-muted mb-3">
+                                    By Doris Muthuri · Oct 08, 2024
+                                </div>
+                                <p class="mb-2">
+                                    Windows 10/11 users ke liye Microsoft Defender by default enabled hota hai.
+                                    Iska sabse bada plus point yeh hai ki yeh free hai aur system ke saath
+                                    tightly integrated hai. Lekin sawal yeh hai – <b>“Kya sirf Defender par
+                                    bharosa karna safe hai?”</b>
+                                </p>
+                                <p class="mb-2">
+                                    Pros jo article me highlight kiye gaye:
+                                </p>
+                                <ul class="mb-2">
+                                    <li>✅ Extra installation ki zarurat nahi, out-of-the-box ready</li>
+                                    <li>✅ Daily use ke liye theek-thaak malware detection</li>
+                                    <li>✅ System performance ko generally slow nahi karta</li>
+                                </ul>
+                                <p class="mb-2">
+                                    Lekin kuch important limitations bhi:
+                                </p>
+                                <ul class="mb-2">
+                                    <li>⚠️ Har lab test me top score nahi karta, especially zero-day threats ke against</li>
+                                    <li>⚠️ No dedicated VPN, password manager, parental controls ya identity monitoring</li>
+                                    <li>⚠️ Advanced ransomware aur banking protection missing</li>
+                                </ul>
+                                <p class="mb-0">
+                                    Article ka conclusion yeh hai: agar aapka usage basic hai, pirated software use nahi karte,
+                                    risky sites open nahi karte, toh Defender ek <b>minimum baseline security</b> de deta hai.
+                                    Lekin jise bhi sensitive kaam karna ho – jaise online business, freelance work, client data
+                                    handle karna – unke liye ek reputed third-party antivirus suite safer option hai.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Blog 5 -->
+                        <article class="card blog-card shadow-sm border-0 mb-4 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="card-body">
+                                <h3 class="mb-2 text-heading">
+                                    ⚠️ Top 5 Advanced Online Threats You Should Be Concerned About
+                                </h3>
+                                <div class="small text-muted mb-3">
+                                    By Doris Muthuri · Oct 23, 2024
+                                </div>
+                                <p class="mb-2">
+                                    Internet par danger sirf “virus” tak limited nahi raha. Aaj ke time me attacks
+                                    kaafi smart hote ja rahe hain – jo aapke behavior, habits aur personal data ka
+                                    use karke aapko target karte hain. Is blog me 5 aise major threats cover kiye gaye
+                                    hain jinke baare me har internet user ko pata hona chahiye.
+                                </p>
+                                <ul class="mb-2">
+                                    <li>🎭 <b>Spear phishing</b> – generic spam nahi, balki aapke naam, company
+                                        ya interest ke hisaab se banaye gaye ultra-realistic emails.</li>
+                                    <li>🧬 <b>Zero-day exploits</b> – software ki aisi vulnerabilities jinka patch
+                                        abhi tak release hi nahi hua, attackers unka faayda uthate hain.</li>
+                                    <li>🧷 <b>Ransomware attacks</b> – aapki files ko encrypt karke unlock ke badle
+                                        paise demand karna.</li>
+                                    <li>📂 <b>Data breaches</b> – websites ya services ke hack hone se aapke passwords,
+                                        emails, phone numbers dark web par leak ho jana.</li>
+                                    <li>👤 <b>Identity theft</b> – aapke naam par credit card, loan ya fake accounts open karna.</li>
+                                </ul>
+                                <p class="mb-0">
+                                    Article me har threat ke liye basic prevention tips bhi diye gaye hain –
+                                    jaise strong & unique passwords use karna, 2FA enable karna, software updated rakhna,
+                                    aur ek reliable antivirus + VPN combination use karna – taaki aap real world me
+                                    in risks ko kaafi had tak reduce kar sako.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Blog 6 -->
+                        <article class="card blog-card shadow-sm border-0 mb-0 wow fadeInUp" data-wow-delay="0.35s">
+                            <div class="card-body">
+                                <h3 class="mb-2 text-heading">
+                                    📲 Do You Really Need Antivirus on Android?
+                                </h3>
+                                <div class="small text-muted mb-3">
+                                    By Doris Muthuri · Oct 12, 2023
+                                </div>
+                                <p class="mb-2">
+                                    Android ek secure platform hai, lekin 100% foolproof nahi. Bahut log sochte hain
+                                    ki “Google Play Protect hai, toh antivirus ki kya zarurat?”. Is blog me yeh samjhaya
+                                    gaya hai ki practically kaunse situations me Android antivirus useful ho jata hai.
+                                </p>
+                                <p class="mb-2">
+                                    Risk zyada badh jaata hai jab:
+                                </p>
+                                <ul class="mb-2">
+                                    <li>🔓 Aap unknown sources se APK install karte ho</li>
+                                    <li>📥 Fake ya cloned apps accidentally install ho jati hain</li>
+                                    <li>📶 Public Wi-Fi par banking / shopping apps use karte ho</li>
+                                    <li>📤 Random links par click karke files download kar lete ho</li>
+                                </ul>
+                                <p class="mb-2">
+                                    Ek decent Android antivirus:
+                                </p>
+                                <ul class="mb-2">
+                                    <li>❗ Malicious apps ko install hone se pehle flag kar sakta hai</li>
+                                    <li>🌐 Dangerous websites aur phishing pages ko block kar sakta hai</li>
+                                    <li>📍 Lost phone ke case me locate/wipe features de sakta hai (agar included ho)</li>
+                                </ul>
+                                <p class="mb-0">
+                                    Article ka conclusion simple hai – agar aap very careful user ho,
+                                    sirf official apps use karte ho aur risky sites par nahi jaate,
+                                    toh risk kam hai. Lekin real world me hum sab kabhi-kabhi mistake karte hi hain,
+                                    isliye Android antivirus ek extra safety net ki tarah kaam kar sakta hai,
+                                    especially un logon ke liye jo phones par financial ya work-related data rakhte hain.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <!-- RIGHT COLUMN – SIDEBAR -->
+                    <div class="col-lg-4">
+                        <div class="card shadow-sm border-0 mb-4 wow fadeInRight" data-wow-delay="0.2s">
+                            <div class="card-body">
+                                <h5 class="mb-3 text-heading">
+                                    📚 What You’ll Learn Here
+                                </h5>
+                                <p class="small mb-2">
+                                    Ye blog section un logon ke liye bana hai jo apni digital life ko seriously
+                                    secure rakhna chahte hain, bina complex technical terms me uljhe.
+                                </p>
+                                <ul class="small mb-0">
+                                    <li>Best antivirus choose karna step-by-step samjhenge</li>
+                                    <li>Free vs paid security ka clear difference jaanenge</li>
+                                    <li>Phone, laptop aur home Wi-Fi ko secure karne ke easy tareeke seekhenge</li>
+                                    <li>Online scams, phishing aur ransomware se bachne ki habits build karenge</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card shadow-sm border-0 wow fadeInRight" data-wow-delay="0.3s">
+                            <div class="card-body">
+                                <h5 class="mb-2 text-heading">
+                                    ✍️ Contribute a Blog
+                                </h5>
+                                <p class="small mb-0">
+                                    Agar aapko cybersecurity, privacy ya antivirus tools ke baare me likhna pasand hai,
+                                    toh aap apne ideas humare saath share kar sakte hain.  
+                                    Hum practical, real-world tips aur honest opinions ko value karte hain.
+                                    <br><br>
+                                    Contributor ke rules, format aur submission process ke liye upar menu me
+                                    <b>“Become a Contributor”</b> page visit kar sakte hain.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- MAIN BLOG CONTENT END -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-4 rounded mb-5" style="background: rgba(255, 255, 255, .03);">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="rounded p-4">
+                        <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center mb-4" style="width: 70px; height: 70px;">
+                            <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white">Address</h4>
+                            <p class="mb-2">USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="rounded p-4">
+                        <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center mb-4" style="width: 70px; height: 70px;">
+                            <i class="fas fa-envelope fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white">Mail Us</h4>
+                            <p class="mb-2">info@AntivirusReview.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <div class="footer-item">
+                            <h4 class="text-primary mb-4">AntivirusReview</h4>
+                            <p class="mb-3">
+                                Get honest and expert antivirus reviews for top security brands.
+                                Compare protection, performance, and real user feedback to choose the best for your PC and phone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-primary mb-4">Reviews</h4>
+                        <a href="aura-antivirus.html"><i class="fas fa-angle-right me-2"></i> Aura</a>
+                        <a href="norton-mobile-security.html"><i class="fas fa-angle-right me-2"></i> Norton 360</a>
+                        <a href="avast-one-premium.html"><i class="fas fa-angle-right me-2"></i> Avast One Premium</a>
+                        <a href="mcafee-total-protection.html"><i class="fas fa-angle-right me-2"></i> McAfee’s Total Protection</a>
+                        <a href="trend-micro-antivirus.html"><i class="fas fa-angle-right me-2"></i> Trend Micro Antivirus</a>
+                        <a href="bitdefender-total-security.html"><i class="fas fa-angle-right me-2"></i> Bitdefender Total Security</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-primary mb-4">Information</h4>
+                        <a href="about-us.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="privacy-policy.html"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                        <a href="terms-and-conditions.html"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-primary mb-4">Customer Service</h4>
+                        <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                        <a href="methodology.html"><i class="fas fa-angle-right me-2"></i> Scoring & Ranking</a>
+                        <a href="submit-blog.html"><i class="fas fa-angle-right me-2"></i> Become a Contributor</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-white">
+                        <a href="#" class="border-bottom text-white">
+                            <i class="fas fa-copyright text-light me-2"></i>AntivirusReview
+                        </a>, All right reserved.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // Agar main.js me init na ho raha ho, to yeh backup hai
+        new WOW().init();
+    </script>
+</body>
+
+</html>
